@@ -1,0 +1,53 @@
+html{
+    background-color: #000000;
+    color: rgb(196, 120, 226);
+}
+
+
+/* Bouton */
+button{
+    transition: 0.15s;
+    background-color: transparent;
+    color: currentColor;
+    border: currentColor 1px solid;
+    padding: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+button:hover{
+    transition: 0.15s;
+    font-size: 1.7em;
+}
+
+#bouton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Hidden */
+.hidden {
+    display: none;
+}
+
+/* Footer */
+
+footer {
+    transition: 0.15s;
+    position: absolute;
+    bottom: 0%;
+    font-size: 80%;
+}
+a {
+    color: currentColor;
+}
+a:hover {
+    transition: 0.15s;
+    font-size: 120%;
+}
