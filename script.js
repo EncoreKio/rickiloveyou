@@ -1,13 +1,22 @@
-const boutonOlder = document.getElementById("overbutton")
-const paragraph = document.getElementById("paragraph");
-const rick = document.getElementById("image");
-var audio = new Audio('musique.mp3');
+const boutonOlder = document.getElementById("trustButton")
+const paragraph = document.getElementById("trustText");
+const rickGif = document.getElementById("rickGif");
+const rickText = document.getElementById("rickText");
+const title = document.getElementById("title");
+const icon = document.getElementById("icon");
+
+var audio = new Audio('music.mp3');
 
 boutonOlder.addEventListener("click", startrickrolled);
 
 function startrickrolled() {
     boutonOlder.className = "hidden";
     paragraph.className = "hidden";
-    rick.className = "rickimg";
+    rickGif.className = "";
+    rickText.className = "";
+    title.innerHTML = "You have been Rick-Rolled";
+    icon.setAttribute("href","icon.png")
     audio.play();
 }
+
+console.log(title.innerText);
