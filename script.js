@@ -18,5 +18,3 @@ function startrickrolled() {
     icon.setAttribute("href","icon.png")
     audio.play();
 }
-
-console.log(title.innerText);
